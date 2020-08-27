@@ -1,243 +1,352 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="dep/normalize.css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="dep/Font-Awesome/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body lang="en">
-    <section id="main">
-      <header id="title">
-        <h1>John Doe</h1>
-        <span class="subtitle">Plaintiff, defendant &amp; witness</span>
-      </header>
-      <section class="main-block">
-        <h2>
-          <i class="fa fa-suitcase"></i> Experiences
-        </h2>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="dep/normalize.css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="dep/Font-Awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Ivan Zaitsev</title>
+</head>
+<body lang="en">
+<section id="main">
+    <header id="title">
+        <h1>Ivan Zaitsev</h1>
+        <div class="subtitle">
+            <i class="fa fa-map-marker"></i> Redwood City, CA
+        </div>
+        <span class="subtitle">
+            Software engineer and architect with <strong>13+</strong> years of professional experience.
+            Specializes in <strong>JVM</strong>-based backends for high-loaded distributed systems.
+            Significant experience in <strong>ML</strong> (python, scala),
+            <strong>Big Data</strong> (OLAP, SQL, Map-reduce), <strong>frontend</strong> (JS/TS, Web).
+            Excellent skills in problem-solving, communication, work ethics, successful project delivery.
+            Passionate about learning, algorithms, performance optimization and roguelike video game development.
+        </span>
+    </header>
+    <section class="main-block">
+        <h2><i class="fa fa-suitcase"></i> Professional Experience</h2>
         <section class="blocks">
-          <div class="date">
-            <span>2015</span><span>present</span>
-          </div>
-          <div class="decorator">
-          </div>
-          <div class="details">
-            <header>
-              <h3>Some Position</h3>
-              <span class="place">Some Workplace</span>
-              <span class="location">(remote)</span>
-            </header>
-            <div>
-              <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio. Vestibulum dapibus pharetra odio, egestas ullamcorper ipsum congue ac. Maecenas viverra tortor eget convallis vestibulum. Donec pulvinar venenatis est, non sollicitudin metus laoreet sed. Fusce tincidunt felis nec neque aliquet porttitor</li>
-              </ul>
-              </div>
-          </div>
-        </section>
-        <section class="blocks">
-          <div class="date">
-            <span>2014</span><span>2015</span>
-          </div>
-          <div class="decorator">
-          </div>
-          <div class="details">
-            <header>
-              <h3>Another Position</h3>
-              <span class="place">Some Workplace</span>
-              <span class="location">Some City, Some Country</span>
-            </header>
-            <div>
-              <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-              </ul>
+            <div class="date">
+                <span>2020</span><span>2015</span>
             </div>
-          </div>
-        </section>
-        <section class="blocks">
-          <div class="date">
-            <span>2013</span><span>2014</span>
-          </div>
-          <div class="decorator">
-          </div>
-          <div class="details">
-            <header>
-              <h3>Yet Another Job Position</h3>
-              <span class="place">Some Workplace</span>
-              <span class="location">Some City, Some Country</span>
-            </header>
-            <div>
-              <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-              </ul>
-              </div>
-          </div>
-        </section>
-      </section>
-      <section class="main-block">
-        <h2>
-          <i class="fa fa-folder-open"></i> Selected Projects
-        </h2>
-        <section class="blocks">
-          <div class="date">
-            <span>2015</span><span>2016</span>
-          </div>
-          <div class="decorator">
-          </div>
-          <div class="details">
-            <header>
-              <h3>Some Project 1</h3>
-              <span class="place">Some workplace</span>
-            </header>
-            <div>
-              <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio. Vestibulum dapibus pharetra odio, egestas ullamcorper ipsum congue ac</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio</li>
-              </ul>
+            <div class="decorator"></div>
+            <div class="details inline">
+                <header>
+                    <h3>Sr. Software Engineer</h3>
+                    <span class="place">RevJet Inc.</span>
+                    <span class="location">San Carlos, CA</span>
+                </header>
+                <div>
+                    <ul>
+                        <li><strong>Technologies:</strong>
+                            java, scala, kotlin, spark, spark ML, vertx, kubernetes, docker, AWS,
+                            mysql, vertica, clickhouse, cassandra, kafka, etc.
+                        </li>
+                        <li>created <strong>ML product recommendation pipeline</strong> that
+                            was crunching terrabytes of raw data and served up to 1k rps with response time SLA < 20ms
+                        </li>
+
+                        <li>created <strong>Recommendation Engine</strong>,
+                            that managed 100+ user-defined hierarchical models and served up to 1k rps with
+                            model response time under 20ms
+                        </li>
+
+                        <li>partially designed and worked on <strong>Analytics pipeline</strong>,
+                            that provided ETL and OLAP capabilities for billions of events per day, with petabytes
+                            of historic data and real-time reporting capabilities
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </section>
+
         <section class="blocks">
-          <div class="date">
-            <span>2014</span><span>2015</span>
-          </div>
-          <div class="decorator">
-          </div>
-          <div class="details">
-            <header>
-              <h3>Some Project 2</h3>
-              <span class="place">Some workplace</span>
-            </header>
-            <div>
-              <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio. Vestibulum dapibus pharetra odio, egestas ullamcorper ipsum congue ac. Maecenas viverra tortor eget convallis vestibulum. Donec pulvinar venenatis est, non sollicitudin metus laoreet sed. Fusce tincidunt felis nec neque aliquet porttitor</li>
-              </ul>
+            <div class="date">
+                <span>2015</span><span>2012</span>
             </div>
-          </div>
-        </section>
-        <section class="blocks">
-          <div class="date">
-            <span>2014</span>
-          </div>
-          <div class="decorator">
-          </div>
-          <div class="details">
-            <header>
-              <h3>Some Project 3</h3>
-              <span class="place">Some workplace</span>
-            </header>
-            <div>
-              <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio</li>
-              </ul>
+            <div class="decorator"></div>
+            <div class="details inline">
+                <header>
+                    <h3>Sr. Software Engineer</h3>
+                    <span class="place">Lifestreet Media Corp.</span>
+                    <span class="location">San Francisco, CA</span>
+                </header>
+                <div>
+                    <ul>
+                        <li><strong>Technologies:</strong>
+                            scala, tomcat, vertica, clickhouse, memcached,
+                            golang, python, scikit-learn, scipy, numpy,
+                            javascript, phaserjs, webgl,
+                            AWS, kubernetes, docker, etc.
+                        </li>
+
+                        <li>
+                            redesigned and implemented <strong>OLAP backend</strong>,
+                            with 10x speed for some queries and extendable architecture
+                        </li>
+                        <li>
+                            created a tech stack from scratch and then successfully
+                            lead a team of 3+ people building and delivering
+                            <strong>Playable ads</strong> (a web-based replicas of mobile games)
+                        </li>
+                        <li>
+                            participated in development and optimization of an
+                            <strong>ML-based RTB bidder</strong>,
+                            a high-loaded service with billions of requests per day,
+                            reduced RAM requirements 4x
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </section>
-      </section>
-      <section class="main-block concise">
-        <h2>
-          <i class="fa fa-graduation-cap"></i> Education
-        </h2>
+
         <section class="blocks">
-          <div class="date">
-            <span>2009</span><span>2014</span>
-          </div>
-          <div class="decorator">
-          </div>
-          <div class="details">
-            <header>
-              <h3>Ph.D. in Forty-Two Discovery</h3>
-              <span class="place">Inexistent University</span>
-              <span class="location">Some City, Some Country</span>
-            </header>
-            <div>Relationship of the number with the answer to life, the universe and everything</div>
-          </div>
-        </section>
-        <section class="blocks">
-          <div class="date">
-            <span>2005</span><span>2009</span>
-          </div>
-          <div class="decorator">
-          </div>
-          <div class="details">
-            <header>
-              <h3>LL.B. in H&aelig;matophagic Economics</h3>
-              <span class="place">Inexistent University</span>
-              <span class="location">Some City, Some Country</span>
-            </header>
-            <div>President's Scholarship</div>
-          </div>
-        </section>
-        <section class="blocks">
-          <div class="date">
-            <span>2005</span><span>2009</span>
-          </div>
-          <div class="decorator">
-          </div>
-          <div class="details">
-            <header>
-              <h3>B.S. in Existential Science (Double Major)</h3>
-              <span class="place">Inexistent University</span>
-              <span class="location">Some City, Some Country</span>
-            </header>
-            <div>President's Scholarship</div>
-          </div>
-        </section>
-        <section class="blocks">
-          <div class="date">
-          </div>
-          <div class="decorator">
-          </div>
-          <div class="details">
-            <header>
-              <h3>Massive Online Fee&ndash;Required Course (selective list)</h3>
-            </header>
-            <div class="concise">
-              <ul>
-                <li>Introduction to something else</li>
-                <li>Introduction to some more useless things</li>
-                <li>Philosophy in practice</li>
-                <li>Recursive research and its impact on recursive research</li>
-                <li>Artificial politics</li>
-              </ul>
+            <div class="date">
+                <span>2012</span><span>2010</span>
             </div>
-          </div>
+            <div class="decorator"></div>
+            <div class="details inline">
+                <header>
+                    <h3>Software Engineer</h3>
+                    <span class="place">Cogniance</span>
+                    <span class="location">Kiev, Ukraine</span>
+                </header>
+                <div>
+                    <ul>
+                        <li><strong>Technologies:</strong>
+                            java, EJB 3, spring, hibernate, hadoop, ehcache, maven, postgres, h2, voldemort, JMS,
+                            quartz, etc.
+                        </li>
+                        <li>
+                            as a part of a medium-sized team (6-10 software engineers)
+                            redesigned <strong>ETL pipeline</strong> for Ad Server to handle the increased traffic
+                            (up to one billion impressions per day)
+                        </li>
+                        <li>
+                            designed snowflake-like scheme in Postgres, sql-generating backend service, real-time
+                            analytics
+                        </li>
+                        <li>
+                            using extensive knowledge of the whole system was able to fix the most tricky bugs,
+                            optimize performance of critical parts, and provide L3 support
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
-      </section>
+
+
+        <section class="blocks">
+            <div class="date">
+            </div>
+            <div class="decorator"></div>
+            <div class="details inline">
+                <header>
+                    <h3>Additional Experience</h3>
+                </header>
+                <div>
+                    <ul>
+                        <li>
+                            <strong>Full stack web developer</strong>, LLC Prodex, 2007-2010
+                        </li>
+                        <li>
+                            <strong>Software / Database engineer</strong>, Computing Center of Donetsk National
+                            Technical University, 2005-2007
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
     </section>
-    <aside id="sidebar">
-      <div class="side-block" id="contact">
+
+
+    <section class="main-block concise">
+        <h2>
+            <i class="fa fa-graduation-cap"></i> Education
+        </h2>
+
+        <section class="blocks">
+            <div class="date">
+                <span>2010</span>
+            </div>
+            <div class="decorator">
+            </div>
+            <div class="details">
+                <header>
+                    <h3>MS in Computer Science</h3>
+                    <span class="place">Donetsk National Technical University</span>
+                    <span class="location">Donetsk, Ukraine</span>
+                </header>
+            </div>
+        </section>
+    </section>
+
+    <section class="main-block concise">
+        <h2>
+            <i class="fa fa-laptop"></i> Online Courses
+        </h2>
+
+        <section class="blocks">
+            <div class="date">
+                <span>2018</span>
+            </div>
+            <div class="decorator">
+            </div>
+            <div class="details inline">
+                <header>
+                    <h3>Deep Learning Specialization (5 courses)</h3>
+                    <span class="place">deeplearning.ai / Coursera</span>
+                </header>
+            </div>
+        </section>
+
+        <section class="blocks">
+            <div class="date">
+                <span>2018</span>
+            </div>
+            <div class="decorator">
+            </div>
+            <div class="details inline">
+                <header>
+                    <h3>Applied Plotting, Charting & Data Representation in Python</h3>
+                    <span class="place">University of Michigan / Coursera</span>
+                </header>
+            </div>
+        </section>
+
+        <section class="blocks">
+            <div class="date">
+                <span>2018</span>
+            </div>
+            <div class="decorator">
+            </div>
+            <div class="details inline">
+                <header>
+                    <h3>Introduction to Data Science in Python</h3>
+                    <span class="place">University of Michigan / Coursera</span>
+                </header>
+            </div>
+        </section>
+
+        <section class="blocks">
+            <div class="date">
+                <span>2014</span>
+            </div>
+            <div class="decorator">
+            </div>
+            <div class="details inline">
+                <header>
+                    <h3>Machine Learning</h3>
+                    <span class="place">Stanford University / Coursera</span>
+                </header>
+            </div>
+        </section>
+
+        <section class="blocks">
+            <div class="date">
+                <span>2012</span>
+            </div>
+            <div class="decorator">
+            </div>
+            <div class="details inline">
+                <header>
+                    <h3>Principles of Reactive Programming</h3>
+                    <span class="place">École Polytechnique Fédérale de Lausanne / Coursera</span>
+                </header>
+            </div>
+        </section>
+
+        <!--        <section class="blocks">-->
+        <!--            <div class="date">-->
+        <!--                <span>2012</span>-->
+        <!--            </div>-->
+        <!--            <div class="decorator">-->
+        <!--            </div>-->
+        <!--            <div class="details inline">-->
+        <!--                <header>-->
+        <!--                    <h3>Functional Programming Principles in Scala</h3>-->
+        <!--                    <span class="place">École Polytechnique Fédérale de Lausanne / Coursera</span>-->
+        <!--                </header>-->
+        <!--            </div>-->
+        <!--        </section>-->
+
+        <!--        <section class="blocks">-->
+        <!--            <div class="date">-->
+        <!--                <span>2011</span>-->
+        <!--            </div>-->
+        <!--            <div class="decorator">-->
+        <!--            </div>-->
+        <!--            <div class="details">-->
+        <!--                <header>-->
+        <!--                    <h3>Algorithms Part I, II</h3>-->
+        <!--                    <span class="place">Princeton University / Coursera</span>-->
+        <!--                </header>-->
+        <!--            </div>-->
+        <!--        </section>-->
+
+    </section>
+
+
+</section>
+<aside id="sidebar">
+    <div class="side-block" id="contact">
         <h1>
-          Contact Info
+            Contact Info
         </h1>
         <ul>
-          <li><i class="fa fa-globe"></i> johndoe.gtld</li>
-          <li><i class="fa fa-linkedin"></i> linkedin.com/in/john</li>
-          <li><i class="fa fa-envelope"></i> me@johndoe.gtld</li>
-          <li><i class="fa fa-phone"></i> 800.000.0000</li>
+            <li><i class="fa fa-envelope"></i> <a href="mailto:█████@gmail.com">█████@gmail.com</a></li>
+            <li><i class="fa fa-phone"></i> (650) 305-████</li>
+            <li><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/aivean/">linkedin.com/in/aivean</a>
+            </li>
+            <li><i class="fa fa-globe"></i> <a href="https://aivean.com">aivean.com</a></li>
         </ul>
-      </div>
-      <div class="side-block" id="skills">
-        <h1>
-          Skills
-        </h1>
+    </div>
+    <div class="side-block" id="skills">
+        <h1>Core Competencies</h1>
+
         <ul>
-          <li>Omnipresence</li>
-          <li>Anonymity</li>
+            <li>JVM</li>
+            <li>Software architecture</li>
+            <li>Distributed systems</li>
+            <li>High load</li>
+            <li>Machine learning</li>
+            <li>Big Data & OLAP</li>
+            <li>Functional programming</li>
+            <li>Concurrency</li>
+            <li>Algorithms</li>
+            <li>Data structures</li>
+            <li>Performance</li>
         </ul>
+
+        <h1>Proficiencies</h1>
+
         <ul>
-          <li>Ordinarity</li>
-          <li>No name rights</li>
+            <li><strong>Languages:</strong> java, scala, kotlin, python, javascript</li>
+            <li><strong>JVM libs:</strong> Vertx, Spring, Hibernate, JPA, JDBC, JMS, Servlets, AspectJ, Spark, Hadoop,
+                Quartz, log4j, slf4j, slf4s, ehcache, Jackson, JMX, concurrency, Akka!, scala parsers/combinators,
+                coroutines, jmh
+            </li>
+            <li><strong>Python libs:</strong> numpy, scipy, pandas, keras, tensorflow, matplotlib, flask</li>
+            <li><strong>Js libs:</strong> react, redux, mobx, d3, phaser, immutable-js, lodash, jquery</li>
+
+            <li><strong>[NO]SQL:</strong> Vertica, Clickhouse, PostgreSQL, MySQL, H2, SQLite, MS SQL, Cassandra,
+                Voldemort, Memcached, Redis
+            </li>
+            <li><strong>Messages:</strong> Rabbit MQ, kafka
+            </li>
+
+            <li><strong>Tools:</strong> linters, static analyzers, testing harnesses, profilers, memory
+                analyzers, load testers, CI, containerization, orchestration, etc.
+            </li>
+            <li><strong>Secondary:</strong> Golang, Typescript, C++, ASM, PHP, Pascal/Delphi, Basic, Matlab
+            </li>
         </ul>
-      </div>
-      <div class="side-block" id="disclaimer">
-        This r&eacute;sum&eacute; was wholly typeset with HTML/CSS &mdash; see <code>git.io/vVSYL</code>
-      </div>
-    </aside>
-  </body>
+    </div>
+
+    <!--    <div class="side-block" id="disclaimer">-->
+    <!--        This r&eacute;sum&eacute; was wholly typeset with HTML/CSS &mdash; see <code>git.io/vVSYL</code>-->
+    <!--    </div>-->
+</aside>
+</body>
 </html>

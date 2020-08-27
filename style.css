@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @page{
   size: letter portrait;
   margin: 0;
@@ -18,7 +20,7 @@
 
   /* XXX: using px for very good precision control */
   --decorator-outer-offset-top: 10px;
-  --decorator-outer-offset-left: -5.5px;
+  --decorator-outer-offset-left: -5px;
   --decorator-border-width: 1px;
   --decorator-outer-dim: 9px;
   --decorator-border: 1px solid #ccc;
@@ -33,7 +35,7 @@ body{
   width: var(--page-width);
   height: var(--page-height);
   margin: 0;
-  font-family: "Open Sans", sans-serif; 
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 1.3;
   color: #444;
@@ -49,11 +51,15 @@ li{
   list-style-type: none;
 }
 
+a {
+  color: #444;
+}
+
 #main{
   float: left;
   width: var(--main-width);
-  padding: 0.25in 0.25in 0 0.25in;
-  font-size: 7pt;
+  padding: 0.1in 0.25in 0 0.25in;
+  font-size: 9pt;
 }
 
 #sidebar{
@@ -61,23 +67,25 @@ li{
   position: relative; /* for disclaimer */
   width: var(--sidebar-width);
   height: 100%;
-  padding: 0.6in var(--sidebar-horizontal-padding);
+  padding: 0.1in var(--sidebar-horizontal-padding);
   background-color: #f2f2f2;
-  font-size: 8.5pt;
+  font-size: 10pt;
 }
 
 /* main */
 
 /** big title **/
-#title, h1, h2{
+#title h1, #title h2{
   text-transform: uppercase;
 }
 
 #title{
   position: relative;
   left: 0.55in;
-  margin-bottom: 0.3in;
+  margin-right: 0.55in;
+  margin-bottom: 0.15in;
   line-height: 1.2;
+  text-align: justify;
 }
 
 #title h1{
@@ -92,7 +100,8 @@ li{
 }
 
 .subtitle{
-  font-size: 8pt;
+  font-size: 9pt;
+  margin-bottom: 0.1in;
 }
 
 /*** categorial blocks ***/
@@ -107,7 +116,7 @@ li{
   /* XXX: 0.5px for aligning fx printing */
   left: calc((var(--date-block-width) + var(--decorator-horizontal-margin)));
   font-weight: 400;
-  font-size: 11pt;
+  font-size: 12pt;
   color: #555;
 }
 
@@ -136,6 +145,10 @@ li{
 }
 
 /**** minor tweaks on the icon fonts ****/
+#main h2 > .fa {
+  top: 1.5pt;
+}
+
 #main h2 > .fa-graduation-cap{
   left: calc(var(--main-blocks-title-icon-offset-left) - 2pt);
   top: 2pt;
@@ -148,6 +161,7 @@ li{
 #main h2 > .fa-folder-open{
   top: 1.5pt;
 }
+
 
 /**** individual row blocks (date - decorator - details) ****/
 
@@ -162,9 +176,9 @@ li{
 
 .date{
   flex: 0 0 var(--date-block-width);
-  padding-top: calc(var(--row-blocks-padding-top) + 2.5pt) !important;
+  padding-top: calc(var(--row-blocks-padding-top) + 1.8pt) !important;
   padding-right: var(--decorator-horizontal-margin);
-  font-size: 7pt;
+  font-size: 7.5pt;
   text-align: right;
   line-height: 1;
 }
@@ -243,8 +257,24 @@ li{
   font-size: 9pt;
 }
 
+/* details with single-line header */
+.details.inline header h3{
+  display: inline-block;
+}
+
+.details.inline header .place:before {
+  content: " @ ";
+}
+.details.inline header .place {
+  float: none;
+}
+
 .main-block:not(.concise) .details div{
-  margin: 0.18in 0 0.1in 0; 
+  margin: 0.18in 0 0.1in 0;
+}
+
+.main-block:not(.concise) .details.inline div{
+  margin: 0.05in 0 0.1in 0;
 }
 
 .main-block:not(.concise) .blocks:last-child .details div{
@@ -259,7 +289,7 @@ li{
 
 .details .place{
   float: left;
-  font-size: 7.5pt;
+  font-size: 9pt;
 }
 
 .details .location{
@@ -274,7 +304,7 @@ li{
   display: inline-block;
   position: relative;
   right: 3pt;
-  top: 0.25pt;
+  top: 0.15pt;
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -293,11 +323,21 @@ li{
   margin: 0 0 0.025in 0;
 }
 
+#main li ul {
+  margin: 0.04in 0;
+}
+
 /****** customize list symbol style ******/
 #main li::before{
   position: relative;
   margin-left: -4.25pt;
   content: '• ';
+}
+
+#main li li::before{
+  position: relative;
+  margin-left: -4.25pt;
+  content: '⚬ ';
 }
 
 .details .concise ul{
@@ -325,7 +365,7 @@ li{
 }
 
 .side-block{
-  margin-top: 0.5in; 
+  margin-top: 0.15in;
 }
 
 #contact ul{
